@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f4f7fb;
+    color: #263238;
+    line-height: 1.6;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(135deg, #102a43, #2471a3);
+    color: white;
+    text-align: center;
+    padding: 35px 15px;
+}
+
+header h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #e0f2fe;
+    margin: 5px;
+}
+
+/* NAVIGATION */
+nav {
+    background: #16324f;
+    padding: 15px 5px;
+    text-align: center;
+}
+
+nav a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    margin: 7px 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffd166;
+}
+
+/* HOME */
+.hero {
+    background: linear-gradient(135deg, #dbeafe, #a9d6e5);
+    text-align: center;
+    padding: 70px 15px;
+}
+
+.hero h2 {
+    color: #102a43;
+    font-size: 34px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 17px;
+    margin-bottom: 25px;
+}
+
+/* BUTTON */
+.btn {
+    display: inline-block;
+    background: #102a43;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.btn:hover {
+    background: #2471a3;
+}
+
+/* SECTIONS */
+.section {
+    padding: 45px 15px;
+    text-align: center;
+}
+
+.section h2 {
+    color: #102a43;
+    font-size: 27px;
+    margin-bottom: 25px;
+}
+
+.section > p {
+    max-width: 750px;
+    margin: 0 auto 20px;
+}
+
+/* BOOK CARDS */
+.book-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.book {
+    background: white;
+    width: 240px;
+    padding: 25px 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px #d5dce5;
+    transition: 0.3s;
+}
+
+.book:hover {
+    transform: translateY(-5px);
+}
+
+.icon {
+    font-size: 42px;
+}
+
+.book h3 {
+    color: #2471a3;
+    margin: 12px 0;
+}
+
+.book p {
+    margin-bottom: 15px;
+}
+
+.book button {
+    background: #2471a3;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.book button:hover {
+    background: #102a43;
+}
+
+/* SERVICES */
+.services {
+    background: white;
+}
+
+/* CONTACT */
+.contact-section {
+    background: #e8f1f8;
+}
+
+.contact-box {
+    max-width: 520px;
+    margin: 25px auto 0;
+    background: white;
+    padding: 25px 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px #d5dce5;
+}
+
+.contact-box p {
+    margin: 15px 0;
+    overflow-wrap: anywhere;
+}
+
+.contact-box a {
+    color: #075ca8;
+    text-decoration: none;
+}
+
+.contact-box a:hover {
+    text-decoration: underline;
+}
+
+/* FOOTER */
+footer {
+    background: #102a43;
+    color: white;
+    text-align: center;
+    padding: 25px 10px;
+}
+
+footer p {
+    margin-top: 5px;
+    color: #d9eaf7;
+}
+
+/* MOBILE RESPONSIVE */
+@media screen and (max-width: 600px) {
+    header h1 {
+        font-size: 23px;
+    }
+
+    .hero h2 {
+        font-size: 26px;
+    }
+
+    .section h2 {
+        font-size: 23px;
+    }
+
+    nav a {
+        margin: 6px;
+        font-size: 14px;
+    }
+
+    .book {
+        width: 100%;
+        max-width: 350px;
+    }
+      }
